@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="uft-8">
+    <title>Js-Operaciones</title>
+
+<style>
+    body{
+        background-image: url("https://w.wallhaven.cc/full/dg/wallhaven-dgrgql.jpg");
+        padding: 3%;
+    }
+
+    title{
+    display: table-caption;
+    color:aliceblue;
+     text-shadow: 
+    5px 5px 5px gray;
+    font-size: 350%;
+    letter-spacing: 15px 
+    }
+   form{
+       padding: 3%;
+   } 
+
+
+</style>
+</head>
+
+<body>
+    
+    
+    <title >Formula General</title>
+   
+    <hr>
+    <p>Ingresa los valores de acuerdo a como se te piden</p>
+    <br>
+        <img src="https://es-static.z-dn.net/files/dc4/d10c84dbadefe4f3794ac4fd0c2165ad.png" alt="Formula general">
+    
+
+
+    <form>
+        A: <input id="a"><br><br>
+        B: <input id="b"><br><br>
+        C: <input id="c"><br><br>
+        <input type="button" onclick="Operacion()" value="Calcular">
+    </form>
+
+
+
+    <script>
+        function Operacion(){
+            let a = parseInt(document.getElementById(`a`).value);
+            let b = parseInt(document.getElementById(`b`).value);
+            let c = parseInt(document.getElementById(`c`).value);
+            console.log(a)
+            console.log(b)
+            console.log(c)
+
+            bcuadrada=b*b;
+            ac=a*c;
+            acm=ac*4;
+
+
+            if(bcuadrada===acm){
+                alert("Solo Hay una solucion para x")
+            }
+
+            if(bcuadrada<acm){
+                alert("El Resultado Es Un Valor Imaginario")
+            }
+
+          
+            if(bcuadrada>acm){
+                alert("x Tiene dos soluciones")
+            }
+            console.log(bcuadrada)
+            console.log(acm)
+       
+
+
+        }
+
+    </script>
+</body>
+
+</html>
